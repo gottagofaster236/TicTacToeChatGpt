@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="/static/game.css">
+</head>
+<body>
+
+<!-- HTML code for the game board -->
+<div id="game-board">
+  <table>
+    {% for i in range(3) %}
+      <tr>
+        {% for j in range(3) %}
+          <td id="cell-{{ i }}-{{ j }}">{{ board[i][j] }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+
+<!-- Display the current player -->
+<div id="current-player">Current player: {{ current_player }}</div>
+
+<!-- Button to return to the home page -->
+<div id="return-button-container">
+  <button id="return-button">Home</button>
+</div>
+
+<!-- Include the game.js file -->
+<script src="/static/game.js"></script>
+
+</body>
+</html>

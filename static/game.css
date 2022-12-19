@@ -1,0 +1,59 @@
+/* Add some basic styles for the game board */
+#game-board {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+td.x {
+  color: blue;
+}
+
+td.o {
+  color: red;
+}
+
+/* Add a hover effect for the cells */
+#game-board td:hover {
+  background-color: lightgray;
+}
+
+#current-player {
+  margin: 10px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+#return-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#return-button {
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: lightgray;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#return-button:hover {
+  background-color: gray;
+}
